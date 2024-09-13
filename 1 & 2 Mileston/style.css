@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap");
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(243, 85, 23) 11.2%,
+    rgb(37, 67, 100) 91.1%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.resume {
+  max-width: 600px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(139, 57, 9) 11.2%,
+    rgba(9, 111, 224, 1) 91.1%
+  );
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.profile-pic {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  border: 8px solid #171718;
+}
+.fatherName {
+  font-size: 45px;
+  color: whitesmoke;
+}
+
+h1,
+h2 {
+  color: #171718;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #171718;
+}
+
+p,
+li {
+  color: #171718;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#toggle-skills {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: rgb(243, 85, 23);
+  color: #171718;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#toggle-skills:hover {
+  background-color: #0056b3;
+  transition-duration: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p,
+  li {
+    font-size: 1em;
+  }
+
+  #toggle-skills {
+    width: 100%;
+  }
+}
